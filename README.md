@@ -48,7 +48,7 @@ src/index.tsx
     reportWebVitals();
 ```
 
-    [参考](https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html)
+    [参考]<https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html>
 
 ##### 2、useEffect
     useEffect在react18中，当用户输入（如点击）时，传递给useEffect的函数将在页面渲染之前执行。
