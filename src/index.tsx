@@ -1,17 +1,28 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import { createRoot } from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const container = document.getElementById('root') as Element
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+const root = createRoot(container)
+
+// let second = 4;
+// console.log('五秒后卸载#root')
+// console.log(`${second+1}`);
+// const interval =  setInterval(()=>{
+//     console.log(`${second}`);
+//     second--;
+// },1000)
+// setTimeout(() => {
+//     // 五秒后卸载#root
+//     root.unmount();
+//     clearInterval(interval);
+// }, 5000)
+
+root.render(
+    // <React.StrictMode>
+        <App />
+    // </React.StrictMode>
+);
 reportWebVitals();
