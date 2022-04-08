@@ -58,7 +58,7 @@ Random
     }
 ```
 
-当dom渲染频繁时，使用useTransition延时响应
+当dom渲染缓慢时，使用useTransition延时响应
 
 Transition
 ```tsx
