@@ -263,6 +263,7 @@ Transition
     
     用于服务端与客户端之间的稳定的id，避免数据不匹配
 
+    它不可以在列表中作为key使用
 ```tsx
     //useId() 返回字符串
     const id = useId()  
