@@ -138,7 +138,7 @@ useDeferredValue 基于防抖和节流实现的延迟更新，上面的例子中
 
         const numDeferred = useDeferredValue<number>(num)
 
-        const child = useMemo(() => <Child numDeferred={numDeferred}></Child>, [numDeferred])
+        const child = useMemo(() => <Child numDeferred={numDeferred}></Child>, [num])
         return (
             <>
                 num:{num}
