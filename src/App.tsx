@@ -1,22 +1,13 @@
 import react,{ lazy, useEffect,useDeferredValue } from 'react';
 
-// const Picture = lazy(() => import('./components/Index'))
-
-import Lazytest from './components/Lazytest'
+// import Lazytest from './components/Lazytest'
+import Test from './components/useDeferredValue'
 
 const App = () => {
 
-  const effectFun = () =>{
-    console.log('effectFunRender')
-  }
-
-  useEffect(() => {
-    effectFun();
-    console.log('render');
-  })
   return (
     <div className="App">
-      <Lazytest></Lazytest>
+      <Test></Test>
     </div>
   );
 }
